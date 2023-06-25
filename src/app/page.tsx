@@ -1,95 +1,45 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa6";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
+      <div className={styles.button_container}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
+          className={styles.isometric_button}
+          href="https://www.youtube.com/channel/UCB55OE5A4hj4VyKPOSUtsrg"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <FaYoutube size={68} />
         </a>
-
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
+          className={styles.isometric_button}
+          href="https://api.whatsapp.com/send?phone=5515981574134&text=Ol%C3%A1%2C%20Bruno%20Garcia%20Moura%20aqui%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20o%20seu%20trabalho%20de%20desenvolvimento%2C%20pode%20me%20ajudar%3F"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <FaWhatsapp size={68} />
         </a>
-
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
+          className={styles.isometric_button}
+          href="https://www.instagram.com/bgarciamoura/"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
+          <FaInstagram size={68} />
         </a>
-
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
+          className={styles.isometric_button}
+          href="https://www.facebook.com/bruno.garciamoura"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <FaFacebook size={68} />
         </a>
       </div>
     </main>
-  )
+  );
 }
